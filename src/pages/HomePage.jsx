@@ -2,6 +2,7 @@
 import React from "react";
 import banner from "../assets/banner.jpeg";
 
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-gray-50">

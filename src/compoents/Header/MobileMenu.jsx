@@ -1,6 +1,8 @@
 // src/components/Header/MobileMenu.jsx
 import React, { useState } from "react";
 import { menuConfig } from "../../config/menuConfig";
+import UpArrow from "../../assets/Up_arrow.png";
+import DownArrow from "../../assets/Down_arrow.png";
 
 export default function MobileMenu({ onNavigate }) {
   const [openMenus, setOpenMenus] = useState({});
@@ -66,14 +68,11 @@ export default function MobileMenu({ onNavigate }) {
 
               {hasChildren && (
                 <img
-                  src={
-                    openMenus[level] === key
-                      ? "/src/assets/Up_arrow.png"
-                      : "/src/assets/Down_arrow.png"
-                  }
-                  alt={openMenus[level] === key ? "Collapse" : "Expand"}
-                  className="w-4 h-4 ml-2 transition-transform duration-300"
-                />
+  src={openMenus[level] === key ? UpArrow : DownArrow}
+  alt={openMenus[level] === key ? "Collapse" : "Expand"}
+  className="w-4 h-4 ml-2 transition-transform duration-300"
+/>
+
               )}
             </div>
 
@@ -142,15 +141,12 @@ export default function MobileMenu({ onNavigate }) {
                 )}
 
                 {hasChildren && (
-                  <img
-                    src={
-                      openMenus[0] === key
-                        ? "/src/assets/Up_arrow.png"
-                        : "/src/assets/Down_arrow.png"
-                    }
-                    alt={openMenus[0] === key ? "Collapse" : "Expand"}
-                    className="w-4 h-4 ml-2 transition-transform duration-300"
-                  />
+                <img
+  src={openMenus[0] === key ? UpArrow : DownArrow}
+  alt={openMenus[0] === key ? "Collapse" : "Expand"}
+  className="w-4 h-4 ml-2 transition-transform duration-300"
+/>
+
                 )}
               </div>
 
