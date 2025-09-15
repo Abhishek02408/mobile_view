@@ -9,7 +9,7 @@ export default function HomePage() {
         {/* Background Banner Image */}
         <div className="absolute inset-0">
           <img
-            src="/src/assets/banner.jpeg"
+            src="src/assets/banner.jpeg"
             alt="Addverb Banner"
             className="w-full h-full object-cover"
           />
