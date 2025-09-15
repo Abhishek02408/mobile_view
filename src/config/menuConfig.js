@@ -7,7 +7,7 @@ export const siteConfig = {
     { label: "Contact", href: "https://addverb.com/contact-us/" },
   ],
   iconLinks: [
-    { label: "Facebook", href: "https://www.facebook.com/AddverbTech/", icon: "/src/assets/fb.svg" },
+    { label: "Facebook", href: "https://www.facebook.com/AddverbTech/", icon: "mobile_view/src/assets/fb.svg" },
     { label: "Twitter", href: "https://x.com/Addverb_Tech", icon: "🐦" },
     { label: "LinkedIn", href: "https://www.linkedin.com/company/addverb/", icon: "💼" },
     { label: "Instagram", href: "#", icon: "📸" },
