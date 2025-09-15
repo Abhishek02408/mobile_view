@@ -1,5 +1,6 @@
 // src/pages/HomePage.jsx
 import React from "react";
+import banner from "../assets/banner.jpeg";
 
 export default function HomePage() {
   return (
@@ -9,10 +10,10 @@ export default function HomePage() {
         {/* Background Banner Image */}
         <div className="absolute inset-0">
           <img
-            src="src/assets/banner.jpeg"
-            alt="Addverb Banner"
-            className="w-full h-full object-cover"
-          />
+  src={banner}
+  alt="Addverb Banner"
+  className="w-full h-full object-cover"
+/>
           {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
